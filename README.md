@@ -17,7 +17,7 @@
 ![AutoCAD](https://img.shields.io/badge/-AutoCAD-E51050?style=flat-square&logo=autocad&logoColor=white)
 ![Arduino](https://img.shields.io/badge/-Arduino-00979D?style=flat-square&logo=arduino&logoColor=white)
 
-> I’m a idiosyncratic thinker and builder who is interested in how technology can enrich beautiful minds, both individually and collectively as humanity. By “beautiful mind,” I mean not just intelligence, but a pure curiosity, a warm attentiveness toward the natural world and other beings, and a willingness to understand them better and gladly spend time helping them.
+> I’m a idiosyncratic thinker and builder who is interested in building systematic harnesses for human-AI cognitive collaboration. 
 
 ## GitHub Activity
 
@@ -25,7 +25,6 @@
 
 ## Projects
 
-- 🏃‍♀️ **[PaceMaker](https://openclaw.ai)** - Learning is about consistency and sustainability. A pace maker for overshooters like me.
 - ☀️ **[AIMorningBrief](https://github.com/nik-pgh/ai-morning-brief)** - A Discord bot that not only delivers fresh AI news but also analyzed deep "insights" from them every morning. Be connected but not overwhelmed.
 - 🕺 **[Co-opTWorld](https://github.com/nik-pgh/2p_tworld)** - Turn any browser into your terminal; command agents from the road (vt.sh)
 - 🫧 **[BobaBubbleTrouble](https://github.com/FranklinXuNorth/BubbleEscape)** - Turn any browser into your terminal; command agents from the road (vt.sh)
