@@ -38,13 +38,6 @@
 - 🍁 **[miniMapleStory](https://github.com/steipete/summarize)** - Point at any URL or file. Get the gist.
 - 👩‍💻 **[JobScrapper](https://github.com/steipete/summarize)** - Point at any URL or file. Get the gist.
 
-## How I Communicate
-
-- **Living in the future** - Learning and building tools to make agentic engineering faster for everyone
-- **Writing about AI workflows** - Sharing my learnings on [steipete.me](https://steipete.me)
-- **Rapid prototyping** - Full apps in days, not months
-- **[Speaking at conferences](https://github.com/steipete/speaking)** - On vibe coding vs agentic engineering and the future of development
-
 ## Latest Blog Posts
 
 <!-- BLOG-POST-LIST:START -->
