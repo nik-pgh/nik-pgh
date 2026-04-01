@@ -41,6 +41,44 @@
 ## Latest Blog Posts
 
 <!-- BLOG-POST-LIST:START -->
+<table>
+<tr>
+<td align="left" width="50%">
+  <a href="https://nik-pgh.github.io/nik-posts/dealing-with-race-conditions.html"><img src="https://raw.githubusercontent.com/nik-pgh/nik-pgh/main/assets/blog-placeholder.avif" width="250" height="140" style="object-fit:cover" alt="Dealing With Race Conditions"></a><br>
+  <a href="https://nik-pgh.github.io/nik-posts/dealing-with-race-conditions.html"><strong>Dealing With Race Conditions</strong></a><br>
+  <sub>Mar 29, 2026 · 2 min read</sub>
+</td>
+<td align="left" width="50%">
+  <a href="https://nik-pgh.github.io/nik-posts/domain-problem.html"><img src="https://raw.githubusercontent.com/nik-pgh/nik-pgh/main/assets/blog-placeholder.avif" width="250" height="140" style="object-fit:cover" alt="Domain Problem"></a><br>
+  <a href="https://nik-pgh.github.io/nik-posts/domain-problem.html"><strong>Domain Problem</strong></a><br>
+  <sub>Mar 15, 2026 · 2 min read</sub>
+</td>
+</tr>
+<tr>
+<td align="left" width="50%">
+  <a href="https://nik-pgh.github.io/nik-posts/time-to-restore.html"><img src="https://raw.githubusercontent.com/nik-pgh/nik-pgh/main/assets/blog-placeholder.avif" width="250" height="140" style="object-fit:cover" alt="Time To Restore"></a><br>
+  <a href="https://nik-pgh.github.io/nik-posts/time-to-restore.html"><strong>Time To Restore</strong></a><br>
+  <sub>Mar 8, 2026 · 1 min read</sub>
+</td>
+<td align="left" width="50%">
+  <a href="https://nik-pgh.github.io/nik-posts/a-small-win.html"><img src="https://raw.githubusercontent.com/nik-pgh/nik-pgh/main/assets/blog-placeholder.avif" width="250" height="140" style="object-fit:cover" alt="A Small Win"></a><br>
+  <a href="https://nik-pgh.github.io/nik-posts/a-small-win.html"><strong>A Small Win</strong></a><br>
+  <sub>Mar 1, 2026 · 1 min read</sub>
+</td>
+</tr>
+<tr>
+<td align="left" width="50%">
+  <a href="https://nik-pgh.github.io/nik-posts/kid-life-is-just-a-journey.html"><img src="https://raw.githubusercontent.com/nik-pgh/nik-pgh/main/assets/blog-placeholder.avif" width="250" height="140" style="object-fit:cover" alt="Kid Life Is Just A Journey"></a><br>
+  <a href="https://nik-pgh.github.io/nik-posts/kid-life-is-just-a-journey.html"><strong>Kid Life Is Just A Journey</strong></a><br>
+  <sub>Feb 22, 2026 · 1 min read</sub>
+</td>
+<td align="left" width="50%">
+  <a href="https://nik-pgh.github.io/nik-posts/paint-your-partner-layered-agent.html"><img src="https://raw.githubusercontent.com/nik-pgh/nik-pgh/main/assets/blog-placeholder.avif" width="250" height="140" style="object-fit:cover" alt="Paint Your Partner Layered Agent"></a><br>
+  <a href="https://nik-pgh.github.io/nik-posts/paint-your-partner-layered-agent.html"><strong>Paint Your Partner Layered Agent</strong></a><br>
+  <sub>Feb 4, 2025 · 2 min read</sub>
+</td>
+</tr>
+</table>
 <!-- BLOG-POST-LIST:END -->
 
 ## Latest YouTube Videos
