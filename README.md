@@ -84,7 +84,12 @@
 ## Latest YouTube Videos
 
 <!-- BEGIN YOUTUBE-CARDS -->
-
+[![Mole Archy Tutorial Scene](https://ytcards.demolab.com/?id=EScxKemvqdk&title=Mole+Archy+Tutorial+Scene&lang=en&timestamp=1751597376&background_color=%230d1117&title_color=%23ffffff&stats_color=%23dedede&max_title_lines=1&width=250&border_radius=5 "Mole Archy Tutorial Scene")](https://www.youtube.com/watch?v=EScxKemvqdk)
+[![HRI Research - Cham Cham Cham with Misty Facial Expressions](https://ytcards.demolab.com/?id=1NW0TAQLL8c&title=HRI+Research+-+Cham+Cham+Cham+with+Misty+Facial+Expressions&lang=en&timestamp=1744347480&background_color=%230d1117&title_color=%23ffffff&stats_color=%23dedede&max_title_lines=1&width=250&border_radius=5 "HRI Research - Cham Cham Cham with Misty Facial Expressions")](https://www.youtube.com/shorts/1NW0TAQLL8c)
+[![HRI Research - Cham Cham Cham with Misty Body Movement](https://ytcards.demolab.com/?id=3ajsBvkAI3I&title=HRI+Research+-+Cham+Cham+Cham+with+Misty+Body+Movement&lang=en&timestamp=1744347410&background_color=%230d1117&title_color=%23ffffff&stats_color=%23dedede&max_title_lines=1&width=250&border_radius=5 "HRI Research - Cham Cham Cham with Misty Body Movement")](https://www.youtube.com/shorts/3ajsBvkAI3I)
+[![A Walk with Shooting Star Game Teaser](https://ytcards.demolab.com/?id=8yxIVUvqRyc&title=A+Walk+with+Shooting+Star+Game+Teaser&lang=en&timestamp=1742530335&background_color=%230d1117&title_color=%23ffffff&stats_color=%23dedede&max_title_lines=1&width=250&border_radius=5 "A Walk with Shooting Star Game Teaser")](https://www.youtube.com/watch?v=8yxIVUvqRyc)
+[![Misty playing Cham Cham Cham full loop](https://ytcards.demolab.com/?id=0-XYJEpSUyo&title=Misty+playing+Cham+Cham+Cham+full+loop&lang=en&timestamp=1742349758&background_color=%230d1117&title_color=%23ffffff&stats_color=%23dedede&max_title_lines=1&width=250&border_radius=5 "Misty playing Cham Cham Cham full loop")](https://www.youtube.com/shorts/0-XYJEpSUyo)
+[![Co-op Tile World Merged model at Level 1](https://ytcards.demolab.com/?id=bMNn-pUmOa4&title=Co-op+Tile+World+Merged+model+at+Level+1&lang=en&timestamp=1742213785&background_color=%230d1117&title_color=%23ffffff&stats_color=%23dedede&max_title_lines=1&width=250&border_radius=5 "Co-op Tile World Merged model at Level 1")](https://www.youtube.com/watch?v=bMNn-pUmOa4)
 <!-- END YOUTUBE-CARDS -->
 
 ---
