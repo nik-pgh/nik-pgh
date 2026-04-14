@@ -17,7 +17,7 @@
 ![AutoCAD](https://img.shields.io/badge/-AutoCAD-E51050?style=flat-square&logo=autocad&logoColor=white)
 ![Arduino](https://img.shields.io/badge/-Arduino-00979D?style=flat-square&logo=arduino&logoColor=white)
 
-> I’m a idiosyncratic thinker and builder who is interested in building systematic harnesses for human-AI cognitive collaboration. 
+> I’m an idiosyncratic thinker and builder interested in building systematic harnesses for human-AI cognitive collaboration.
 
 ## GitHub Activity
 
@@ -25,18 +25,23 @@
 
 ## Projects
 
-- ☀️ **[AIMorningBrief](https://github.com/nik-pgh/ai-morning-brief)** - A Discord bot that not only delivers fresh AI news but also analyzed deep "insights" from them every morning. Be connected but not overwhelmed.
-- 🕺 **[Co-opTWorld](https://github.com/nik-pgh/2p_tworld)** - Turn any browser into your terminal; command agents from the road (vt.sh)
-- 🫧 **[BobaBubbleTrouble](https://github.com/FranklinXuNorth/BubbleEscape)** - Turn any browser into your terminal; command agents from the road (vt.sh)
-- 🎸 **[HMGuiterHero](https://github.com/nik-pgh/HumanMachineGuitarHero)** - May your tokens never run out—keep agent limits in view.
-- 🐕 **[WWSS](https://github.com/nik-pgh/wwss_1.0)** - May your tokens never run out—keep agent limits in view.
+- ☀️ **[ai-morning-brief](https://github.com/nik-pgh/ai-morning-brief)** - Daily AI news briefing system that turns raw updates into structured insight without overwhelm.
+- 🕺 **[2p_tworld](https://github.com/nik-pgh/2p_tworld)** - Cooperative tile-world experiment, playable in the browser, for shared human-agent interaction.
+- 🫧 **[Boba Bubble Trouble](https://globalgamejam.org/games/2025/boba-bubble-trouble-2)** - Two-player 3D platformer from Pittsburgh Game Jam with squishy boba physics, competitive play, and playful level design.
+- 🐕 **[A Walk with Shooting Star](https://github.com/nik-pgh/wwss_1.0)** - LLM-powered game companion that uses VR spatial context to support embodied conversation, puzzle-solving, and co-play.
+- 🎸 **[Human Machine Guitar Hero](https://github.com/nik-pgh/HumanMachineGuitarHero)** - Cooperative rhythm game research project about machine partners that adapt to a human player’s style and contribution level.
+- 📊 **[openclaw-dashboard](https://github.com/nik-pgh/openclaw-dashboard)** - Observability dashboard for agent sessions, events, failures, cron runs, and subagents.
+- ⛏️ **[niklaworld](https://github.com/nik-pgh/niklaworld)** - Minecraft world and agent embodiment playground where OpenClaw agents live and collaborate in-world.
+- 🧾 **[bill_and_meal](https://github.com/nik-pgh/bill_and_meal)** - Vision-language recipe system that learns from grocery receipt images through distillation.
 
 ### Legacy Work
 
-- 🌉 **[MicropolisExt.](https://github.com/steipete/Peekaboo)** - Lightning-fast macOS screenshots & GUI 
-- 🔠 **[CharInvaders](https://github.com/steipete/Peekaboo)** - Lightning-fast macOS screenshots & GUI automation (MCP + CLI)
-- 🍁 **[miniMapleStory](https://github.com/steipete/summarize)** - Point at any URL or file. Get the gist.
-- 👩‍💻 **[JobScrapper](https://github.com/steipete/summarize)** - Point at any URL or file. Get the gist.
+_Descriptions below are based only on commits authored by me._
+
+- 🌉 **[Micropolis](https://github.com/nik-pgh/micropolis)** - Added a mine and gem feature set, then fixed six simulation bugs around zoning messages, start date, bulldozable rubble, station tile swaps, flooding bounds, and underwater wire costs.
+- 🔠 **[CharInvaders](https://github.com/nik-pgh/charInvaders)** - Built and polished a Unity 2D shooter, with my commits focused on audio fixes, scoreboard work, ending scene flow, best-record bugs, and play-time tracking.
+- 🍁 **[miniMaplestory](https://github.com/nik-pgh/miniMaplestory)** - Built a small Python reimagining of MapleStory with explorable maps, monsters, combat systems, and custom game assets.
+- 👩💻 **[JobScrapper](https://github.com/nik-pgh/pyFlaskJobScrapper_ver2)** - Built a Flask-based job scraping prototype with search pages for remote-job sources, plus CSV outputs for role-specific searches.
 
 ## Latest Blog Posts
 
@@ -84,12 +89,44 @@
 ## Latest YouTube Videos
 
 <!-- BEGIN YOUTUBE-CARDS -->
-[![Mole Archy Tutorial Scene](https://ytcards.demolab.com/?id=EScxKemvqdk&title=Mole+Archy+Tutorial+Scene&lang=en&timestamp=1751597376&background_color=%230d1117&title_color=%23ffffff&stats_color=%23dedede&max_title_lines=1&width=250&border_radius=5 "Mole Archy Tutorial Scene")](https://www.youtube.com/watch?v=EScxKemvqdk)
-[![HRI Research - Cham Cham Cham with Misty Facial Expressions](https://ytcards.demolab.com/?id=1NW0TAQLL8c&title=HRI+Research+-+Cham+Cham+Cham+with+Misty+Facial+Expressions&lang=en&timestamp=1744347480&background_color=%230d1117&title_color=%23ffffff&stats_color=%23dedede&max_title_lines=1&width=250&border_radius=5 "HRI Research - Cham Cham Cham with Misty Facial Expressions")](https://www.youtube.com/shorts/1NW0TAQLL8c)
-[![HRI Research - Cham Cham Cham with Misty Body Movement](https://ytcards.demolab.com/?id=3ajsBvkAI3I&title=HRI+Research+-+Cham+Cham+Cham+with+Misty+Body+Movement&lang=en&timestamp=1744347410&background_color=%230d1117&title_color=%23ffffff&stats_color=%23dedede&max_title_lines=1&width=250&border_radius=5 "HRI Research - Cham Cham Cham with Misty Body Movement")](https://www.youtube.com/shorts/3ajsBvkAI3I)
-[![A Walk with Shooting Star Game Teaser](https://ytcards.demolab.com/?id=8yxIVUvqRyc&title=A+Walk+with+Shooting+Star+Game+Teaser&lang=en&timestamp=1742530335&background_color=%230d1117&title_color=%23ffffff&stats_color=%23dedede&max_title_lines=1&width=250&border_radius=5 "A Walk with Shooting Star Game Teaser")](https://www.youtube.com/watch?v=8yxIVUvqRyc)
-[![Misty playing Cham Cham Cham full loop](https://ytcards.demolab.com/?id=0-XYJEpSUyo&title=Misty+playing+Cham+Cham+Cham+full+loop&lang=en&timestamp=1742349758&background_color=%230d1117&title_color=%23ffffff&stats_color=%23dedede&max_title_lines=1&width=250&border_radius=5 "Misty playing Cham Cham Cham full loop")](https://www.youtube.com/shorts/0-XYJEpSUyo)
-[![Co-op Tile World Merged model at Level 1](https://ytcards.demolab.com/?id=bMNn-pUmOa4&title=Co-op+Tile+World+Merged+model+at+Level+1&lang=en&timestamp=1742213785&background_color=%230d1117&title_color=%23ffffff&stats_color=%23dedede&max_title_lines=1&width=250&border_radius=5 "Co-op Tile World Merged model at Level 1")](https://www.youtube.com/watch?v=bMNn-pUmOa4)
+<table>
+<tr>
+<td align="left" width="50%">
+  <a href="https://www.youtube.com/watch?v=EScxKemvqdk"><img src="https://img.youtube.com/vi/EScxKemvqdk/hqdefault.jpg" width="250" height="140" alt="Mole Archy Tutorial Scene"></a><br>
+  <a href="https://www.youtube.com/watch?v=EScxKemvqdk"><strong>Mole Archy Tutorial Scene</strong></a><br>
+  <sub>VR gameplay demo</sub>
+</td>
+<td align="left" width="50%">
+  <a href="https://www.youtube.com/shorts/1NW0TAQLL8c"><img src="https://img.youtube.com/vi/1NW0TAQLL8c/hqdefault.jpg" width="250" height="140" alt="HRI Research - Cham Cham Cham with Misty Facial Expressions"></a><br>
+  <a href="https://www.youtube.com/shorts/1NW0TAQLL8c"><strong>Cham Cham Cham with Misty Facial Expressions</strong></a><br>
+  <sub>HRI expression study</sub>
+</td>
+</tr>
+<tr>
+<td align="left" width="50%">
+  <a href="https://www.youtube.com/shorts/3ajsBvkAI3I"><img src="https://img.youtube.com/vi/3ajsBvkAI3I/hqdefault.jpg" width="250" height="140" alt="HRI Research - Cham Cham Cham with Misty Body Movement"></a><br>
+  <a href="https://www.youtube.com/shorts/3ajsBvkAI3I"><strong>Cham Cham Cham with Misty Body Movement</strong></a><br>
+  <sub>HRI movement study</sub>
+</td>
+<td align="left" width="50%">
+  <a href="https://www.youtube.com/watch?v=8yxIVUvqRyc"><img src="https://img.youtube.com/vi/8yxIVUvqRyc/hqdefault.jpg" width="250" height="140" alt="A Walk with Shooting Star Game Teaser"></a><br>
+  <a href="https://www.youtube.com/watch?v=8yxIVUvqRyc"><strong>A Walk with Shooting Star Game Teaser</strong></a><br>
+  <sub>Companion game teaser</sub>
+</td>
+</tr>
+<tr>
+<td align="left" width="50%">
+  <a href="https://www.youtube.com/shorts/0-XYJEpSUyo"><img src="https://img.youtube.com/vi/0-XYJEpSUyo/hqdefault.jpg" width="250" height="140" alt="Misty playing Cham Cham Cham full loop"></a><br>
+  <a href="https://www.youtube.com/shorts/0-XYJEpSUyo"><strong>Misty playing Cham Cham Cham full loop</strong></a><br>
+  <sub>Robot gameplay loop</sub>
+</td>
+<td align="left" width="50%">
+  <a href="https://www.youtube.com/watch?v=bMNn-pUmOa4"><img src="https://img.youtube.com/vi/bMNn-pUmOa4/hqdefault.jpg" width="250" height="140" alt="Co-op Tile World Merged model at Level 1"></a><br>
+  <a href="https://www.youtube.com/watch?v=bMNn-pUmOa4"><strong>Co-op Tile World at Level 1</strong></a><br>
+  <sub>Co-op agent gameplay demo</sub>
+</td>
+</tr>
+</table>
 <!-- END YOUTUBE-CARDS -->
 
 ---
@@ -100,7 +137,28 @@
 
 ### Physical Builder to Digital Builder
 
-
+<table>
+<tr>
+<td align="center" width="50%">
+  <img src="assets/physical-builder/pavilion-design-installation.png" width="100%" alt="Pavilion design and installation"><br>
+  <sub><strong>Pavilion Design and Installation</strong><br>Turning ideas into built form through fabrication and on-site assembly.</sub>
+</td>
+<td align="center" width="50%">
+  <img src="assets/physical-builder/spatial-furniture-design.jpeg" width="100%" alt="Spatial and furniture design"><br>
+  <sub><strong>Spatial and Furniture Design</strong><br>Designing spaces and objects around how people move, gather, and inhabit a place.</sub>
+</td>
+</tr>
+<tr>
+<td align="center" width="50%">
+  <img src="assets/physical-builder/design-automation-optimization.png" width="100%" alt="Design automation and optimization"><br>
+  <sub><strong>Design Automation and Optimization</strong><br>Using computational tools to navigate constraints, generate options, and refine decisions.</sub>
+</td>
+<td align="center" width="50%">
+  <img src="assets/physical-builder/computational-simulation.png" width="100%" alt="Computational simulation"><br>
+  <sub><strong>Computational Simulation</strong><br>Testing behavior digitally before fabrication, installation, or deployment.</sub>
+</td>
+</tr>
+</table>
 
 <!--
 **nik-pgh/nik-pgh** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
