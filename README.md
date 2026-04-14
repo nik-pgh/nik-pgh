@@ -92,36 +92,36 @@ _Descriptions below are based only on commits authored by me._
 <table>
 <tr>
 <td align="left" width="50%">
-  <a href="https://www.youtube.com/watch?v=EScxKemvqdk"><img src="https://img.youtube.com/vi/EScxKemvqdk/hqdefault.jpg" width="250" height="140" alt="Mole Archy Tutorial Scene"></a><br>
+  <a href="https://www.youtube.com/watch?v=EScxKemvqdk"><img src="https://img.youtube.com/vi/EScxKemvqdk/mqdefault.jpg" width="250" height="140" alt="Mole Archy Tutorial Scene"></a><br>
   <a href="https://www.youtube.com/watch?v=EScxKemvqdk"><strong>Mole Archy Tutorial Scene</strong></a><br>
   <sub>VR gameplay demo</sub>
 </td>
 <td align="left" width="50%">
-  <a href="https://www.youtube.com/shorts/1NW0TAQLL8c"><img src="https://img.youtube.com/vi/1NW0TAQLL8c/hqdefault.jpg" width="250" height="140" alt="HRI Research - Cham Cham Cham with Misty Facial Expressions"></a><br>
+  <a href="https://www.youtube.com/shorts/1NW0TAQLL8c"><img src="https://img.youtube.com/vi/1NW0TAQLL8c/mqdefault.jpg" width="250" height="140" alt="HRI Research - Cham Cham Cham with Misty Facial Expressions"></a><br>
   <a href="https://www.youtube.com/shorts/1NW0TAQLL8c"><strong>Cham Cham Cham with Misty Facial Expressions</strong></a><br>
   <sub>HRI expression study</sub>
 </td>
 </tr>
 <tr>
 <td align="left" width="50%">
-  <a href="https://www.youtube.com/shorts/3ajsBvkAI3I"><img src="https://img.youtube.com/vi/3ajsBvkAI3I/hqdefault.jpg" width="250" height="140" alt="HRI Research - Cham Cham Cham with Misty Body Movement"></a><br>
+  <a href="https://www.youtube.com/shorts/3ajsBvkAI3I"><img src="https://img.youtube.com/vi/3ajsBvkAI3I/mqdefault.jpg" width="250" height="140" alt="HRI Research - Cham Cham Cham with Misty Body Movement"></a><br>
   <a href="https://www.youtube.com/shorts/3ajsBvkAI3I"><strong>Cham Cham Cham with Misty Body Movement</strong></a><br>
   <sub>HRI movement study</sub>
 </td>
 <td align="left" width="50%">
-  <a href="https://www.youtube.com/watch?v=8yxIVUvqRyc"><img src="https://img.youtube.com/vi/8yxIVUvqRyc/hqdefault.jpg" width="250" height="140" alt="A Walk with Shooting Star Game Teaser"></a><br>
+  <a href="https://www.youtube.com/watch?v=8yxIVUvqRyc"><img src="https://img.youtube.com/vi/8yxIVUvqRyc/mqdefault.jpg" width="250" height="140" alt="A Walk with Shooting Star Game Teaser"></a><br>
   <a href="https://www.youtube.com/watch?v=8yxIVUvqRyc"><strong>A Walk with Shooting Star Game Teaser</strong></a><br>
   <sub>Companion game teaser</sub>
 </td>
 </tr>
 <tr>
 <td align="left" width="50%">
-  <a href="https://www.youtube.com/shorts/0-XYJEpSUyo"><img src="https://img.youtube.com/vi/0-XYJEpSUyo/hqdefault.jpg" width="250" height="140" alt="Misty playing Cham Cham Cham full loop"></a><br>
+  <a href="https://www.youtube.com/shorts/0-XYJEpSUyo"><img src="https://img.youtube.com/vi/0-XYJEpSUyo/mqdefault.jpg" width="250" height="140" alt="Misty playing Cham Cham Cham full loop"></a><br>
   <a href="https://www.youtube.com/shorts/0-XYJEpSUyo"><strong>Misty playing Cham Cham Cham full loop</strong></a><br>
   <sub>Robot gameplay loop</sub>
 </td>
 <td align="left" width="50%">
-  <a href="https://www.youtube.com/watch?v=bMNn-pUmOa4"><img src="https://img.youtube.com/vi/bMNn-pUmOa4/hqdefault.jpg" width="250" height="140" alt="Co-op Tile World Merged model at Level 1"></a><br>
+  <a href="https://www.youtube.com/watch?v=bMNn-pUmOa4"><img src="https://img.youtube.com/vi/bMNn-pUmOa4/mqdefault.jpg" width="250" height="140" alt="Co-op Tile World Merged model at Level 1"></a><br>
   <a href="https://www.youtube.com/watch?v=bMNn-pUmOa4"><strong>Co-op Tile World at Level 1</strong></a><br>
   <sub>Co-op agent gameplay demo</sub>
 </td>
