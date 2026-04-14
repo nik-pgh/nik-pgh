@@ -46,87 +46,23 @@ _Descriptions below are based only on commits authored by me._
 ## Latest Blog Posts
 
 <!-- BLOG-POST-LIST:START -->
-<table>
-<tr>
-<td align="left" width="50%">
-  <a href="https://nik-pgh.github.io/nik-posts/dealing-with-race-conditions.html"><img src="https://raw.githubusercontent.com/nik-pgh/nik-pgh/main/assets/blog-placeholder.avif" width="250" height="140" style="object-fit:cover" alt="Dealing With Race Conditions"></a><br>
-  <a href="https://nik-pgh.github.io/nik-posts/dealing-with-race-conditions.html"><strong>Dealing With Race Conditions</strong></a><br>
-  <sub>Mar 29, 2026 · 2 min read</sub>
-</td>
-<td align="left" width="50%">
-  <a href="https://nik-pgh.github.io/nik-posts/domain-problem.html"><img src="https://raw.githubusercontent.com/nik-pgh/nik-pgh/main/assets/blog-placeholder.avif" width="250" height="140" style="object-fit:cover" alt="Domain Problem"></a><br>
-  <a href="https://nik-pgh.github.io/nik-posts/domain-problem.html"><strong>Domain Problem</strong></a><br>
-  <sub>Mar 15, 2026 · 2 min read</sub>
-</td>
-</tr>
-<tr>
-<td align="left" width="50%">
-  <a href="https://nik-pgh.github.io/nik-posts/time-to-restore.html"><img src="https://raw.githubusercontent.com/nik-pgh/nik-pgh/main/assets/blog-placeholder.avif" width="250" height="140" style="object-fit:cover" alt="Time To Restore"></a><br>
-  <a href="https://nik-pgh.github.io/nik-posts/time-to-restore.html"><strong>Time To Restore</strong></a><br>
-  <sub>Mar 8, 2026 · 1 min read</sub>
-</td>
-<td align="left" width="50%">
-  <a href="https://nik-pgh.github.io/nik-posts/a-small-win.html"><img src="https://raw.githubusercontent.com/nik-pgh/nik-pgh/main/assets/blog-placeholder.avif" width="250" height="140" style="object-fit:cover" alt="A Small Win"></a><br>
-  <a href="https://nik-pgh.github.io/nik-posts/a-small-win.html"><strong>A Small Win</strong></a><br>
-  <sub>Mar 1, 2026 · 1 min read</sub>
-</td>
-</tr>
-<tr>
-<td align="left" width="50%">
-  <a href="https://nik-pgh.github.io/nik-posts/kid-life-is-just-a-journey.html"><img src="https://raw.githubusercontent.com/nik-pgh/nik-pgh/main/assets/blog-placeholder.avif" width="250" height="140" style="object-fit:cover" alt="Kid Life Is Just A Journey"></a><br>
-  <a href="https://nik-pgh.github.io/nik-posts/kid-life-is-just-a-journey.html"><strong>Kid Life Is Just A Journey</strong></a><br>
-  <sub>Feb 22, 2026 · 1 min read</sub>
-</td>
-<td align="left" width="50%">
-  <a href="https://nik-pgh.github.io/nik-posts/paint-your-partner-layered-agent.html"><img src="https://raw.githubusercontent.com/nik-pgh/nik-pgh/main/assets/blog-placeholder.avif" width="250" height="140" style="object-fit:cover" alt="Paint Your Partner Layered Agent"></a><br>
-  <a href="https://nik-pgh.github.io/nik-posts/paint-your-partner-layered-agent.html"><strong>Paint Your Partner Layered Agent</strong></a><br>
-  <sub>Feb 4, 2025 · 2 min read</sub>
-</td>
-</tr>
-</table>
+[![Latest blog posts snapshot](assets/generated/latest-posts.svg)](https://nik-pgh.github.io/nik-posts/posts)
+
+- [Building Nikclaw Watchdog](https://nik-pgh.github.io/nik-posts/building-nikclaw-watchdog.html) · Apr 12, 2026 · 1 min read
+- [Dealing With Race Conditions](https://nik-pgh.github.io/nik-posts/dealing-with-race-conditions.html) · Mar 29, 2026 · 2 min read
+- [Domain Problem](https://nik-pgh.github.io/nik-posts/domain-problem.html) · Mar 15, 2026 · 2 min read
+- [Time To Restore](https://nik-pgh.github.io/nik-posts/time-to-restore.html) · Mar 8, 2026 · 1 min read
 <!-- BLOG-POST-LIST:END -->
 
 ## Latest YouTube Videos
 
 <!-- BEGIN YOUTUBE-CARDS -->
-<table>
-<tr>
-<td align="left" width="50%">
-  <a href="https://www.youtube.com/watch?v=EScxKemvqdk"><img src="https://img.youtube.com/vi/EScxKemvqdk/mqdefault.jpg" width="250" height="140" alt="Mole Archy Tutorial Scene"></a><br>
-  <a href="https://www.youtube.com/watch?v=EScxKemvqdk"><strong>Mole Archy Tutorial Scene</strong></a><br>
-  <sub>VR gameplay demo</sub>
-</td>
-<td align="left" width="50%">
-  <a href="https://www.youtube.com/shorts/1NW0TAQLL8c"><img src="https://img.youtube.com/vi/1NW0TAQLL8c/mqdefault.jpg" width="250" height="140" alt="HRI Research - Cham Cham Cham with Misty Facial Expressions"></a><br>
-  <a href="https://www.youtube.com/shorts/1NW0TAQLL8c"><strong>Cham Cham Cham with Misty Facial Expressions</strong></a><br>
-  <sub>HRI expression study</sub>
-</td>
-</tr>
-<tr>
-<td align="left" width="50%">
-  <a href="https://www.youtube.com/shorts/3ajsBvkAI3I"><img src="https://img.youtube.com/vi/3ajsBvkAI3I/mqdefault.jpg" width="250" height="140" alt="HRI Research - Cham Cham Cham with Misty Body Movement"></a><br>
-  <a href="https://www.youtube.com/shorts/3ajsBvkAI3I"><strong>Cham Cham Cham with Misty Body Movement</strong></a><br>
-  <sub>HRI movement study</sub>
-</td>
-<td align="left" width="50%">
-  <a href="https://www.youtube.com/watch?v=8yxIVUvqRyc"><img src="https://img.youtube.com/vi/8yxIVUvqRyc/mqdefault.jpg" width="250" height="140" alt="A Walk with Shooting Star Game Teaser"></a><br>
-  <a href="https://www.youtube.com/watch?v=8yxIVUvqRyc"><strong>A Walk with Shooting Star Game Teaser</strong></a><br>
-  <sub>Companion game teaser</sub>
-</td>
-</tr>
-<tr>
-<td align="left" width="50%">
-  <a href="https://www.youtube.com/shorts/0-XYJEpSUyo"><img src="https://img.youtube.com/vi/0-XYJEpSUyo/mqdefault.jpg" width="250" height="140" alt="Misty playing Cham Cham Cham full loop"></a><br>
-  <a href="https://www.youtube.com/shorts/0-XYJEpSUyo"><strong>Misty playing Cham Cham Cham full loop</strong></a><br>
-  <sub>Robot gameplay loop</sub>
-</td>
-<td align="left" width="50%">
-  <a href="https://www.youtube.com/watch?v=bMNn-pUmOa4"><img src="https://img.youtube.com/vi/bMNn-pUmOa4/mqdefault.jpg" width="250" height="140" alt="Co-op Tile World Merged model at Level 1"></a><br>
-  <a href="https://www.youtube.com/watch?v=bMNn-pUmOa4"><strong>Co-op Tile World at Level 1</strong></a><br>
-  <sub>Co-op agent gameplay demo</sub>
-</td>
-</tr>
-</table>
+[![Latest YouTube videos snapshot](assets/generated/latest-videos.svg)](https://www.youtube.com/channel/UCXkXJZVNrzh4o8UatfVKb9g/videos)
+
+- [Mole Archy Tutorial Scene](https://www.youtube.com/watch?v=EScxKemvqdk) · Jul 4, 2025
+- [HRI Research - Cham Cham Cham with Misty Facial Expressions](https://www.youtube.com/shorts/1NW0TAQLL8c) · Apr 11, 2025
+- [HRI Research - Cham Cham Cham with Misty Body Movement](https://www.youtube.com/shorts/3ajsBvkAI3I) · Apr 11, 2025
+- [A Walk with Shooting Star Game Teaser](https://www.youtube.com/watch?v=8yxIVUvqRyc) · Mar 21, 2025
 <!-- END YOUTUBE-CARDS -->
 
 ---
