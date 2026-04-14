@@ -1,10 +1,12 @@
 #!/usr/bin/env python3
-"""Fetch blog posts from nik-posts and generate card-style HTML for README."""
+"""Fetch blog + YouTube content and render full-width two-column cards in README."""
 
 import re
 import ssl
 import urllib.error
 import urllib.request
+import xml.etree.ElementTree as ET
+from html import escape
 from html.parser import HTMLParser
 from pathlib import Path
 
@@ -12,12 +14,17 @@ from pathlib import Path
 BLOG_URL = "https://nik-pgh.github.io/nik-posts/posts"
 BASE_URL = "https://nik-pgh.github.io"
 PLACEHOLDER_IMG = "https://raw.githubusercontent.com/nik-pgh/nik-pgh/main/assets/blog-placeholder.avif"
+
+YOUTUBE_CHANNEL_ID = "UCXkXJZVNrzh4o8UatfVKb9g"
+YOUTUBE_FEED_URL = f"https://www.youtube.com/feeds/videos.xml?channel_id={YOUTUBE_CHANNEL_ID}"
+YOUTUBE_THUMB_URL = "https://img.youtube.com/vi/{video_id}/mqdefault.jpg"
+
 README_PATH = Path(__file__).resolve().parents[2] / "README.md"
-START_MARKER = "<!-- BLOG-POST-LIST:START -->"
-END_MARKER = "<!-- BLOG-POST-LIST:END -->"
-MAX_POSTS = 6
-THUMB_WIDTH = 250
-THUMB_HEIGHT = 140
+BLOG_START_MARKER = "<!-- BLOG-POST-LIST:START -->"
+BLOG_END_MARKER = "<!-- BLOG-POST-LIST:END -->"
+YT_START_MARKER = "<!-- BEGIN YOUTUBE-CARDS -->"
+YT_END_MARKER = "<!-- END YOUTUBE-CARDS -->"
+MAX_ITEMS = 6
 
 
 class BlogPostParser(HTMLParser):
@@ -32,15 +39,12 @@ class BlogPostParser(HTMLParser):
         self._in_title_link = False
         self._in_date = False
         self._in_read_time = False
-        self._in_excerpt = False
         self._capture = ""
-        self._depth = 0
 
     def handle_starttag(self, tag, attrs):
         attrs_dict = dict(attrs)
         classes = attrs_dict.get("class", "")
 
-        # Detect timeline-post wrapper
         if "timeline-post" in classes:
             self._in_post = True
             self._current = {}
@@ -48,16 +52,17 @@ class BlogPostParser(HTMLParser):
         if not self._in_post:
             return
 
-        # Thumbnail image
         if "post-thumbnail" in classes:
             self._in_thumbnail = True
 
         if self._in_thumbnail and tag == "img":
             src = attrs_dict.get("src", "")
             if src:
-                self._current["image"] = src
+                if src.startswith("http"):
+                    self._current["image"] = src
+                else:
+                    self._current["image"] = BASE_URL + src
 
-        # Title link inside post-info h4
         if tag == "a" and attrs_dict.get("href", "").endswith(".html"):
             self._in_title_link = True
             href = attrs_dict["href"]
@@ -74,10 +79,6 @@ class BlogPostParser(HTMLParser):
             self._in_read_time = True
             self._capture = ""
 
-        if tag == "p" and ("post-excerpt" in classes or "post-summary" in classes):
-            self._in_excerpt = True
-            self._capture = ""
-
     def handle_endtag(self, tag):
         if self._in_thumbnail and tag == "div":
             self._in_thumbnail = False
@@ -88,7 +89,6 @@ class BlogPostParser(HTMLParser):
 
         if self._in_date and tag == "span":
             raw = self._capture.strip()
-            # Strip "Published: " prefix if present
             self._current["date"] = raw.replace("Published: ", "")
             self._in_date = False
 
@@ -96,18 +96,13 @@ class BlogPostParser(HTMLParser):
             self._current["read_time"] = self._capture.strip()
             self._in_read_time = False
 
-        if self._in_excerpt and tag == "p":
-            self._current["excerpt"] = self._capture.strip()
-            self._in_excerpt = False
-
-        # End of a timeline-post article
         if self._in_post and tag == "article" and "title" in self._current:
             self.posts.append(self._current)
             self._current = {}
             self._in_post = False
 
     def handle_data(self, data):
-        if self._in_title_link or self._in_date or self._in_read_time or self._in_excerpt:
+        if self._in_title_link or self._in_date or self._in_read_time:
             self._capture += data
 
 
@@ -123,16 +118,6 @@ def _urlopen(url):
         return urllib.request.urlopen(req, timeout=30, context=ctx)
 
 
-def fetch_posts():
-    """Fetch and parse blog posts from the /posts timeline page."""
-    with _urlopen(BLOG_URL) as resp:
-        html = resp.read().decode("utf-8")
-
-    parser = BlogPostParser()
-    parser.feed(html)
-    return parser.posts[:MAX_POSTS]
-
-
 def format_date(date_str):
     """Convert 2025-01-19 to Jan 19, 2025."""
     months = [
@@ -146,74 +131,137 @@ def format_date(date_str):
     return f"{months[int(month) - 1]} {int(day)}, {year}"
 
 
-def generate_cards(posts):
-    """Generate HTML table cards for blog posts with optional thumbnails."""
-    if not posts:
-        return "No blog posts found."
+def fetch_blog_posts():
+    """Fetch blog posts from nik-posts page."""
+    with _urlopen(BLOG_URL) as resp:
+        html = resp.read().decode("utf-8")
+
+    parser = BlogPostParser()
+    parser.feed(html)
+
+    posts = []
+    for post in parser.posts[:MAX_ITEMS]:
+        date = format_date(post.get("date", ""))
+        read_time = post.get("read_time", "")
+        meta_parts = [p for p in [date, read_time] if p]
+        posts.append(
+            {
+                "title": post.get("title", "Untitled"),
+                "url": post.get("url", "#"),
+                "image": post.get("image", PLACEHOLDER_IMG),
+                "meta": " · ".join(meta_parts),
+            }
+        )
+
+    return posts
+
+
+def fetch_youtube_videos():
+    """Fetch latest channel videos from YouTube Atom feed."""
+    with _urlopen(YOUTUBE_FEED_URL) as resp:
+        xml_text = resp.read().decode("utf-8")
+
+    ns = {
+        "atom": "http://www.w3.org/2005/Atom",
+        "yt": "http://www.youtube.com/xml/schemas/2015",
+    }
+
+    root = ET.fromstring(xml_text)
+    videos = []
+
+    for entry in root.findall("atom:entry", ns)[:MAX_ITEMS]:
+        title = (entry.findtext("atom:title", default="Untitled", namespaces=ns) or "").strip()
+        video_id = (entry.findtext("yt:videoId", default="", namespaces=ns) or "").strip()
+        published = (entry.findtext("atom:published", default="", namespaces=ns) or "").strip()
+
+        url = ""
+        for link in entry.findall("atom:link", ns):
+            if link.attrib.get("rel") == "alternate":
+                url = link.attrib.get("href", "")
+                break
+
+        if not url and video_id:
+            url = f"https://www.youtube.com/watch?v={video_id}"
+
+        videos.append(
+            {
+                "title": title,
+                "url": url or "#",
+                "image": YOUTUBE_THUMB_URL.format(video_id=video_id) if video_id else "",
+                "meta": format_date(published[:10]),
+            }
+        )
+
+    return videos
+
+
+def _render_cell(item, align):
+    title = item.get("title", "Untitled")
+    url = item.get("url", "#")
+    image = item.get("image", "") or PLACEHOLDER_IMG
+    meta = item.get("meta", "")
+
+    safe_title = escape(title)
+    safe_url = escape(url, quote=True)
+    safe_image = escape(image, quote=True)
+    safe_meta = escape(meta)
+
+    return (
+        f'<td align="{align}" width="50%">\n'
+        f'  <a href="{safe_url}"><img src="{safe_image}" width="100%" style="width:100%;height:140px;object-fit:cover" alt="{safe_title}"></a><br>\n'
+        f'  <a href="{safe_url}"><strong>{safe_title}</strong></a><br>\n'
+        f"  <sub>{safe_meta}</sub>\n"
+        f"</td>"
+    )
+
+
+def generate_cards(items):
+    """Generate full-width two-column cards with left/right alignment."""
+    if not items:
+        return "No items found."
 
     rows = []
-    for i in range(0, len(posts), 2):
-        cells = []
-        for post in posts[i : i + 2]:
-            title = post.get("title", "Untitled")
-            url = post.get("url", "#")
-            date = format_date(post.get("date", ""))
-            read_time = post.get("read_time", "")
-            image = post.get("image", "")
+    for i in range(0, len(items), 2):
+        pair = items[i : i + 2]
 
-            meta_parts = [p for p in [date, read_time] if p]
-            meta = " · ".join(meta_parts)
+        left_cell = _render_cell(pair[0], "left")
+        if len(pair) > 1:
+            right_cell = _render_cell(pair[1], "right")
+        else:
+            right_cell = '<td align="right" width="50%"></td>'
 
-            img_src = image if image else PLACEHOLDER_IMG
-            img_html = (
-                f'  <a href="{url}">'
-                f'<img src="{img_src}" width="{THUMB_WIDTH}" height="{THUMB_HEIGHT}"'
-                f' style="object-fit:cover" alt="{title}"></a><br>\n'
-            )
+        rows.append("<tr>\n" + left_cell + "\n" + right_cell + "\n</tr>")
 
-            cell = (
-                f'<td align="left" width="50%">\n'
-                f"{img_html}"
-                f'  <a href="{url}"><strong>{title}</strong></a><br>\n'
-                f"  <sub>{meta}</sub>\n"
-                f"</td>"
-            )
-
-            cells.append(cell)
-
-        if len(cells) == 1:
-            cells.append('<td width="50%"></td>')
-
-        row = "<tr>\n" + "\n".join(cells) + "\n</tr>"
-        rows.append(row)
-
-    return "<table>\n" + "\n".join(rows) + "\n</table>"
+    return '<table width="100%" cellspacing="0" cellpadding="0">\n' + "\n".join(rows) + "\n</table>"
 
 
-def update_readme(cards_html):
+def replace_section(readme, start_marker, end_marker, body):
+    pattern = re.escape(start_marker) + r".*?" + re.escape(end_marker)
+    replacement = start_marker + "\n" + body + "\n" + end_marker
+    return re.sub(pattern, replacement, readme, flags=re.DOTALL)
+
+
+def update_readme(blog_cards_html, youtube_cards_html):
     """Replace content between markers in README."""
     readme = README_PATH.read_text(encoding="utf-8")
 
-    pattern = re.escape(START_MARKER) + r".*?" + re.escape(END_MARKER)
-    replacement = START_MARKER + "\n" + cards_html + "\n" + END_MARKER
-    new_readme = re.sub(pattern, replacement, readme, flags=re.DOTALL)
+    readme = replace_section(readme, BLOG_START_MARKER, BLOG_END_MARKER, blog_cards_html)
+    readme = replace_section(readme, YT_START_MARKER, YT_END_MARKER, youtube_cards_html)
 
-    if new_readme != readme:
-        README_PATH.write_text(new_readme, encoding="utf-8")
-        print("README.md updated with blog post cards.")
-    else:
-        print("No changes to README.md.")
+    README_PATH.write_text(readme, encoding="utf-8")
+    print("README.md updated with blog and YouTube cards.")
 
 
 def main():
-    posts = fetch_posts()
-    print(f"Found {len(posts)} blog posts:")
-    for p in posts:
-        img = "with image" if p.get("image") else "no image"
-        print(f"  - {p.get('title')} ({img})")
+    posts = fetch_blog_posts()
+    videos = fetch_youtube_videos()
 
-    cards_html = generate_cards(posts)
-    update_readme(cards_html)
+    print(f"Found {len(posts)} blog posts.")
+    print(f"Found {len(videos)} YouTube videos.")
+
+    blog_cards_html = generate_cards(posts)
+    youtube_cards_html = generate_cards(videos)
+    update_readme(blog_cards_html, youtube_cards_html)
 
 
 if __name__ == "__main__":
