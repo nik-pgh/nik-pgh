@@ -208,13 +208,9 @@ def _render_cell(item, align, width_pct):
 
     return (
         f'<td align="{align}" width="{width_pct}%" valign="top">\n'
-        f'  <table width="94%" align="{align}" cellspacing="0" cellpadding="0">\n'
-        f'    <tr><td align="left">\n'
-        f'      <a href="{safe_url}"><img src="{safe_image}" width="100%" style="width:100%;height:140px;object-fit:cover" alt="{safe_title}"></a><br>\n'
-        f'      <a href="{safe_url}"><strong>{safe_title}</strong></a><br>\n'
-        f'      <sub>{safe_meta}</sub>\n'
-        f'    </td></tr>\n'
-        f'  </table>\n'
+        f'  <a href="{safe_url}"><img src="{safe_image}" width="94%" style="width:94%;height:140px;object-fit:cover" alt="{safe_title}"></a><br>\n'
+        f'  <div align="left"><a href="{safe_url}"><strong>{safe_title}</strong></a><br>\n'
+        f'  <sub>{safe_meta}</sub></div>\n'
         f"</td>"
     )
 
