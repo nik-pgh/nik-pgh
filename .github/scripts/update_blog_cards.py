@@ -195,7 +195,7 @@ def fetch_youtube_videos():
     return videos
 
 
-def _render_cell(item, align):
+def _render_cell(item, align, width_pct):
     title = item.get("title", "Untitled")
     url = item.get("url", "#")
     image = item.get("image", "") or PLACEHOLDER_IMG
@@ -207,30 +207,37 @@ def _render_cell(item, align):
     safe_meta = escape(meta)
 
     return (
-        f'<td align="{align}" width="50%">\n'
-        f'  <a href="{safe_url}"><img src="{safe_image}" width="100%" style="width:100%;height:140px;object-fit:cover" alt="{safe_title}"></a><br>\n'
+        f'<td align="{align}" width="{width_pct}%" valign="top">\n'
+        f'  <a href="{safe_url}"><img src="{safe_image}" width="94%" style="width:94%;height:140px;object-fit:cover" alt="{safe_title}"></a><br>\n'
         f'  <a href="{safe_url}"><strong>{safe_title}</strong></a><br>\n'
         f"  <sub>{safe_meta}</sub>\n"
         f"</td>"
     )
 
 
-def generate_cards(items):
-    """Generate full-width two-column cards with left/right alignment."""
+def generate_cards(items, columns=3):
+    """Generate full-width cards in a 3-column grid with edge alignment."""
     if not items:
         return "No items found."
 
+    columns = max(1, columns)
+    width_pct = round(100 / columns, 2)
+    aligns = ["left", "center", "right"]
+
     rows = []
-    for i in range(0, len(items), 2):
-        pair = items[i : i + 2]
+    for i in range(0, len(items), columns):
+        chunk = items[i : i + columns]
+        cells = []
 
-        left_cell = _render_cell(pair[0], "left")
-        if len(pair) > 1:
-            right_cell = _render_cell(pair[1], "right")
-        else:
-            right_cell = '<td align="right" width="50%"></td>'
+        for col_idx in range(columns):
+            if col_idx < len(chunk):
+                align = aligns[col_idx] if col_idx < len(aligns) else "left"
+                cells.append(_render_cell(chunk[col_idx], align, width_pct))
+            else:
+                align = aligns[col_idx] if col_idx < len(aligns) else "left"
+                cells.append(f'<td align="{align}" width="{width_pct}%"></td>')
 
-        rows.append("<tr>\n" + left_cell + "\n" + right_cell + "\n</tr>")
+        rows.append("<tr>\n" + "\n".join(cells) + "\n</tr>")
 
     return '<table width="100%" cellspacing="0" cellpadding="0">\n' + "\n".join(rows) + "\n</table>"
 
