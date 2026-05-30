@@ -90,36 +90,36 @@ _Descriptions below are based only on commits authored by me._
 <table width="100%" cellspacing="0" cellpadding="0">
 <tr>
 <td align="left" width="33.33%" valign="top">
+  <a href="https://www.youtube.com/watch?v=H_fqRtejaJ0"><img src="https://img.youtube.com/vi/H_fqRtejaJ0/mqdefault.jpg" width="94%" style="width:94%;height:140px;object-fit:cover" alt="Material Ninja 🥷🏼 Fruit Ninja with materiality"></a><br>
+  <div align="left"><a href="https://www.youtube.com/watch?v=H_fqRtejaJ0"><strong>Material Ninja 🥷🏼 Fruit Ninja with materiality</strong></a><br>
+  <sub>May 28, 2026</sub></div>
+</td>
+<td align="center" width="33.33%" valign="top">
   <a href="https://www.youtube.com/watch?v=EScxKemvqdk"><img src="https://img.youtube.com/vi/EScxKemvqdk/mqdefault.jpg" width="94%" style="width:94%;height:140px;object-fit:cover" alt="Mole Archy Tutorial Scene"></a><br>
   <div align="left"><a href="https://www.youtube.com/watch?v=EScxKemvqdk"><strong>Mole Archy Tutorial Scene</strong></a><br>
   <sub>Jul 4, 2025</sub></div>
 </td>
-<td align="center" width="33.33%" valign="top">
+<td align="right" width="33.33%" valign="top">
   <a href="https://www.youtube.com/shorts/1NW0TAQLL8c"><img src="https://img.youtube.com/vi/1NW0TAQLL8c/mqdefault.jpg" width="94%" style="width:94%;height:140px;object-fit:cover" alt="HRI Research - Cham Cham Cham with Misty Facial Expressions"></a><br>
   <div align="left"><a href="https://www.youtube.com/shorts/1NW0TAQLL8c"><strong>HRI Research - Cham Cham Cham with Misty Facial Expressions</strong></a><br>
-  <sub>Apr 11, 2025</sub></div>
-</td>
-<td align="right" width="33.33%" valign="top">
-  <a href="https://www.youtube.com/shorts/3ajsBvkAI3I"><img src="https://img.youtube.com/vi/3ajsBvkAI3I/mqdefault.jpg" width="94%" style="width:94%;height:140px;object-fit:cover" alt="HRI Research - Cham Cham Cham with Misty Body Movement"></a><br>
-  <div align="left"><a href="https://www.youtube.com/shorts/3ajsBvkAI3I"><strong>HRI Research - Cham Cham Cham with Misty Body Movement</strong></a><br>
   <sub>Apr 11, 2025</sub></div>
 </td>
 </tr>
 <tr>
 <td align="left" width="33.33%" valign="top">
+  <a href="https://www.youtube.com/shorts/3ajsBvkAI3I"><img src="https://img.youtube.com/vi/3ajsBvkAI3I/mqdefault.jpg" width="94%" style="width:94%;height:140px;object-fit:cover" alt="HRI Research - Cham Cham Cham with Misty Body Movement"></a><br>
+  <div align="left"><a href="https://www.youtube.com/shorts/3ajsBvkAI3I"><strong>HRI Research - Cham Cham Cham with Misty Body Movement</strong></a><br>
+  <sub>Apr 11, 2025</sub></div>
+</td>
+<td align="center" width="33.33%" valign="top">
   <a href="https://www.youtube.com/watch?v=8yxIVUvqRyc"><img src="https://img.youtube.com/vi/8yxIVUvqRyc/mqdefault.jpg" width="94%" style="width:94%;height:140px;object-fit:cover" alt="A Walk with Shooting Star Game Teaser"></a><br>
   <div align="left"><a href="https://www.youtube.com/watch?v=8yxIVUvqRyc"><strong>A Walk with Shooting Star Game Teaser</strong></a><br>
   <sub>Mar 21, 2025</sub></div>
 </td>
-<td align="center" width="33.33%" valign="top">
+<td align="right" width="33.33%" valign="top">
   <a href="https://www.youtube.com/shorts/0-XYJEpSUyo"><img src="https://img.youtube.com/vi/0-XYJEpSUyo/mqdefault.jpg" width="94%" style="width:94%;height:140px;object-fit:cover" alt="Misty playing Cham Cham Cham full loop"></a><br>
   <div align="left"><a href="https://www.youtube.com/shorts/0-XYJEpSUyo"><strong>Misty playing Cham Cham Cham full loop</strong></a><br>
   <sub>Mar 19, 2025</sub></div>
-</td>
-<td align="right" width="33.33%" valign="top">
-  <a href="https://www.youtube.com/watch?v=bMNn-pUmOa4"><img src="https://img.youtube.com/vi/bMNn-pUmOa4/mqdefault.jpg" width="94%" style="width:94%;height:140px;object-fit:cover" alt="Co-op Tile World Merged model at Level 1"></a><br>
-  <div align="left"><a href="https://www.youtube.com/watch?v=bMNn-pUmOa4"><strong>Co-op Tile World Merged model at Level 1</strong></a><br>
-  <sub>Mar 17, 2025</sub></div>
 </td>
 </tr>
 </table>
